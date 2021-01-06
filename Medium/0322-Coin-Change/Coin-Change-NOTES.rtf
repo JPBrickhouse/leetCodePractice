@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 The first file \'96 coin-change.js\'a0\'96 is a good start. It works for a good chunk of cases.\
+HOWEVER, it doesn\'92t work for everything\'85\
+\
+The second file \'96 coin-change-continued.js \'96 attempts to improve it\
+It takes the original mini algorithm and calls it as a function internally\
+HOWEVER, it still struggles with the same edge cases\
+\
+Scrap these two attempts and revisit\'85\
+// =================\
+\
+Apparently this is known as the \'93change-making problem\'94 (https://en.wikipedia.org/wiki/Change-making_problem), which is a variation of the \'93knapsack problem\'94 (https://en.wikipedia.org/wiki/Knapsack_problem).\
+\
+Some of my approaches were \'93greedy,\'94 in that I was always trying to use the biggest coin first.\
+\
+Brute force would involve finding all the combinations (and sub-combinations) of possible groups of coins\
+\
+The correct solution requires dynamic programming:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 SOLVED version uses BOTTOM UP approach (which was based off of the following video and associated code, which walk through the concepts excellently): https://www.youtube.com/watch?v=jgiZlGzXMBw&ab_channel=BackToBackSWE\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+}
